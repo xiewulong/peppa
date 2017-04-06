@@ -1,0 +1,27 @@
+{
+  "name": "peppa",
+  "version": "0.0.1",
+  "description": "Peppa pig",
+  "main": "index.js",
+  "scripts": {
+    "test": "./bin/init sample"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiewulong/peppa.git"
+  },
+  "keywords": [
+    "peppa"
+  ],
+  "author": {
+    "name": "xiewulong",
+    "email": "xiewulong@vip.qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiewulong/peppa/issues"
+  },
+  "homepage": "https://github.com/xiewulong/peppa#readme",
+  "dependencies": {
+  }
+}
