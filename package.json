@@ -3,8 +3,9 @@
   "version": "0.0.2",
   "description": "Peppa pig",
   "main": "index.js",
+  "bin": "./bin/index.js",
   "scripts": {
-    "test": "./bin/init sample"
+    "test": "node ./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/xiewulong/peppa/issues"
   },
-  "homepage": "https://github.com/xiewulong/peppa#readme"
+  "homepage": "https://github.com/xiewulong/peppa#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
