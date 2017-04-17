@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "./bin/index.js",
   "scripts": {
-    "test": "node ./bin/index.js"
+    "test": "node ./bin/peppa.js"
   },
   "repository": {
     "type": "git",
