@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 'use strict';
 
-const program = require('commander');
+const commander = require('commander');
 
 const pkg = require('../package.json');
 const init = require('../src/init.js');
 
-program
+commander
 	.version(pkg.version)
 	.usage('<command> [option...]');
 
-program
+commander
 	.command('initialize [dirname] [cwd]')
 	.alias('init')
 	.description('application initialization')
@@ -19,28 +19,28 @@ program
 	})
 	.on('--help', () => {
 		console.log('  Examples:');
-		console.log('');
+		console.log();
 		console.log('    $ peppa init');
 		console.log('    $ peppa init envs');
 		console.log('    $ peppa init envs sample');
-		console.log('');
+		console.log();
 	});
 
-program
+commander
 	.command('*')
 	.action((command) => {
-		program.help();
+		commander.help();
 	})
 	._noHelp = true;
 
-program
+commander
 	.on('--help', () => {
 		console.log('  Examples:');
-		console.log('');
+		console.log();
 		console.log('    application initialization:');
 		console.log('    $ peppa init');
-		console.log('');
+		console.log();
 	})
 	.parse(process.argv);
 
-process.argv.length == 2 && program.help();
+process.argv.length == 2 && commander.help();
