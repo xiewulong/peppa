@@ -11,8 +11,8 @@ commander
 	.usage('<command> [option...]');
 
 commander
-	.command('initialize [dirname] [cwd]')
-	.alias('init')
+	.command('init [dirname] [cwd]')
+	// .alias('initialize')
 	.description('application initialization')
 	.action((dirname, cwd) => {
 		init(cwd, dirname);

@@ -12,7 +12,12 @@
     "url": "git+https://github.com/xiewulong/peppa.git"
   },
   "keywords": [
-    "peppa"
+    "peppa",
+    "alias",
+    "app",
+    "init",
+    "application",
+    "initialization"
   ],
   "author": {
     "name": "xiewulong",
