@@ -77,6 +77,7 @@ class Initializer {
 
 		console.log();
 		console.log('  ... initialization completed.');
+		console.log();
 	}
 
 	confirm() {
@@ -134,6 +135,7 @@ class Initializer {
 	quit() {
 		console.log();
 		console.log('  Quit initialization.');
+		console.log();
 	}
 
 }
