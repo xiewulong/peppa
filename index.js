@@ -6,8 +6,4 @@
  */
 'use strict';
 
-const alias = require('./src/alias');
-
-module.exports = {
-	alias,
-};
+module.exports = require('./lib');

@@ -8,10 +8,10 @@
 
 const path = require('path');
 
-module.exports = function() {
+module.exports = () => {
 	let aliases = {};
 
-	return function(name, _path) {
+	return (name, _path) => {
 		if(_path) {
 			aliases[name] = _path;
 			return;
