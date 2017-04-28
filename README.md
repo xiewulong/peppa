@@ -48,7 +48,6 @@ nodejs的process.stdin用起来挺麻烦的, 干脆封装一个让代码组织�
 
 ```js
 // stdin.js
-
 const peppa = require('peppa');
 
 process.stdout.write('Hey, baby! Do you like peppa? [yes/no] ');
