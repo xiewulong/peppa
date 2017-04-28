@@ -36,7 +36,7 @@ const alias = require('peppa').alias();
 alias('@app', __dirname);
 
 // 获取别名路径
-console.dir(alias('@app'));  // -> /home/xiewulong/peppa/sample
+console.log(alias('@app'));  // -> /home/xiewulong/peppa/sample
 console.log(alias('@app/apps'));  // -> /home/xiewulong/peppa/sample/apps
 console.log(alias('@app/common'));  // -> /home/xiewulong/peppa/sample/common
 ```
