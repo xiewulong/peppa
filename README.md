@@ -7,9 +7,9 @@
 <details>
 
 * [安装](#安装)
-* [别名](#别名)
+* [别名管理](#别名管理)
 * [简化stdin输入](#简化stdin输入)
-* [应用初始化](#应用初始化)
+* [配置初始化](#配置初始化)
 * [License](#license)
 
 </details>
@@ -20,7 +20,7 @@
 $ npm i [-g] peppa
 ```
 
-## 别名
+## 别名管理
 
 应用管理中, 经常会用到文件路径的抽象管理, 为常用的路径提供别名以方便调用.
 
@@ -74,7 +74,7 @@ Hey, baby! Do you like peppa? [yes/no] y
 Yes, I like her.
 ```
 
-## 应用初始化
+## 配置初始化
 
 ```bash
 $ peppa init
