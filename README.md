@@ -1,6 +1,6 @@
 # Peppa
 
-应用管理和配置工具集.
+应用管理和配置工具集
 
 ## 目录
 
@@ -22,7 +22,7 @@ $ npm i [-g] peppa
 
 ## 别名管理
 
-应用管理中, 经常会用到文件路径的抽象管理, 为常用的路径提供别名以方便调用.
+应用管理中 经常会用到文件路径的抽象管理 为常用的路径提供别名以方便调用
 
 ```js
 // alias.js
@@ -44,7 +44,7 @@ console.log(alias('app/normal/path/will/original/return'));  // -> app/normal/pa
 
 ## 简化stdin输入
 
-nodejs的process.stdin用起来挺麻烦的, 干脆封装一个让代码组织起来更舒服.
+nodejs的process.stdin用起来挺麻烦的 干脆封装一个让代码组织起来更舒服
 
 
 ```js
