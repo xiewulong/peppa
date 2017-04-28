@@ -45,9 +45,10 @@ console.log(alias('app/normal/path/will/original/return'));  // -> app/normal/pa
 
 nodejs的process.stdin用起来挺麻烦的, 干脆封装一个让代码组织起来更舒服.
 
-stdin.js
 
 ```js
+// stdin.js
+
 const peppa = require('peppa');
 
 process.stdout.write('Hey, baby! Do you like peppa? [yes/no] ');
