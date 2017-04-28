@@ -10,17 +10,17 @@ const peppa = require('../');
 
 process.stdout.write('Hey, baby! Do you like peppa? [yes/no] ');
 peppa.stdin((chunk) => {
-  let yes;
+  let answer;
 
   switch(chunk) {
     case 'y':
     case 'yes':
-      yes = true;
+      answer = true;
       break;
     default:
-      yes = false;
+      answer = false;
       break;
   }
 
-  console.log((yes && 'Yes' || 'No') + ', I' + (!yes && ' do not' || '') + ' like her.');
+  console.log((answer && 'Yes' || 'No') + ', I' + (!answer && ' do not' || '') + ' like her.');
 });
