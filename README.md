@@ -50,7 +50,7 @@ stdin.js
 ```js
 const peppa = require('peppa');
 
-process.stdout.write('Hey, baby, do you like peppa? [yes/no]');
+process.stdout.write('Hey, baby! Do you like peppa? [yes/no] ');
 peppa.stdin((chunk) => {
   let yes;
 
@@ -64,12 +64,12 @@ peppa.stdin((chunk) => {
       break;
   }
 
-  console.log((yes && 'Yes' || 'No') + ', I' + (yes && '' : ' do not') + ' like her.');
+  console.log((yes && 'Yes' || 'No') + ', I' + (!yes && ' do not' || '') + ' like her.');
 });
 ```
 
 ```bash
 $ node stdin.js
-Hey, baby, do you like peppa? y
+Hey, baby! Do you like peppa? [yes/no] y
 Yes, I like her.
 ```
