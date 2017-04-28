@@ -4,7 +4,7 @@
 const commander = require('commander');
 
 const pkg = require('../package.json');
-const init = require('../src/init.js');
+const init = require('../lib/init');
 
 commander
 	.version(pkg.version)
