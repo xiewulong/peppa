@@ -82,4 +82,4 @@ $ peppa init
 
 ## License
 
-MIT - [xiewulong](https://github.com/xiewulong) <xiewulong@vip.qq.com>
+MIT - [xiewulong](https://github.com/xiewulong) &lt;<xiewulong@vip.qq.com>&gt;
