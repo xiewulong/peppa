@@ -25,6 +25,7 @@ $ npm i [-g] peppa
 应用管理中, 经常会用到文件路径的抽象管理, 为常用的路径提供别名以方便调用.
 
 ```js
+// alias.js
 const alias = require('peppa').alias();
 
 // 设置别名, 必须以'@'开头
