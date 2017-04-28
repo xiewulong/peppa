@@ -10,6 +10,7 @@
 * [别名](#别名)
 * [简化stdin输入](#简化stdin输入)
 * [应用初始化](#应用初始化)
+* [License](#license)
 
 </details>
 
@@ -78,3 +79,7 @@ Yes, I like her.
 ```bash
 $ peppa init
 ```
+
+## License
+
+MIT - [Xiewulong](https://github.com/xiewulong)
