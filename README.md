@@ -7,9 +7,9 @@
 <details>
 
 * [安装](#安装)
-* [应用初始化](#应用初始化)
 * [别名](#别名)
-* [stdin标准输入](#stdin标准输入)
+* [简化stdin输入](#简化stdin输入)
+* [应用初始化](#应用初始化)
 
 </details>
 
@@ -19,12 +19,6 @@
 $ npm i [-g] peppa
 ```
 
-## 应用初始化
-
-```bash
-$ peppa init
-```
-
 ## 别名
 
 应用管理中, 后端经常会用到路径管理的抽象管理, 为常用的路径提供别名以方便定义和调用.
@@ -32,13 +26,18 @@ $ peppa init
 ```js
 const alias = require('peppa').alias();
 
-// 设置别名
+// 设置别名, 必须以'@'开头
+alias('app', __dirname);  // -> Error: Alias must start with @.
 alias('@app', __dirname);
 
 // 获取别名路径
 console.log(alias('@app'));  // -> /home/xiewulong/peppa/sample
-console.log(alias('@app/apps'));  // -> /home/xiewulong/peppa/sample/apps
-console.log(alias('@app/common'));  // -> /home/xiewulong/peppa/sample/common
+console.log(alias('@app/foo'));  // -> /home/xiewulong/peppa/sample/foo
+console.log(alias('@app/foo/bar'));  // -> /home/xiewulong/peppa/sample/foo/bar
+console.log(alias('@app/foo/bar/qux'));  // -> /home/xiewulong/peppa/sample/foo/bar/qux
+
+// 非别名路径原样返回
+console.log(alias('app/normal/path/will/original/return'));  // -> app/normal/path/will/original/return
 ```
 
 ## 简化stdin输入
@@ -72,4 +71,10 @@ peppa.stdin((chunk) => {
 $ node stdin.js
 Hey, baby! Do you like peppa? [yes/no] y
 Yes, I like her.
+```
+
+## 应用初始化
+
+```bash
+$ peppa init
 ```
