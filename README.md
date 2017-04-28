@@ -69,8 +69,6 @@ peppa.stdin((chunk) => {
 });
 ```
 
-cli执行stdin.js
-
 ```bash
 $ node stdin.js
 Hey, baby! Do you like peppa? [yes/no] y
