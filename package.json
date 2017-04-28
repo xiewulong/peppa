@@ -5,7 +5,10 @@
   "main": "index.js",
   "bin": "./bin/index.js",
   "scripts": {
-    "test": "node ./bin/peppa.js"
+    "test": "npm run test:alias && npm run test:init && npm run test:stdin",
+    "test:alias": "node ./sample/alias.js",
+    "test:init": "node ./bin/peppa.js init envs sample",
+    "test:stdin": "node ./sample/stdin.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,8 @@
     "app",
     "init",
     "application",
-    "initialization"
+    "initialization",
+    "stdin"
   ],
   "author": {
     "name": "xiewulong",
