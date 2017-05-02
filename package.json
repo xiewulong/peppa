@@ -3,15 +3,25 @@
   "version": "0.0.2",
   "description": "Peppa pig",
   "main": "index.js",
+  "bin": "./bin/index.js",
   "scripts": {
-    "test": "./bin/init sample"
+    "test": "npm run test:alias && npm run test:stdin && npm run test:init",
+    "test:alias": "node ./sample/alias.js",
+    "test:stdin": "node ./sample/stdin.js",
+    "test:init": "node ./bin/peppa.js init envs sample"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xiewulong/peppa.git"
   },
   "keywords": [
-    "peppa"
+    "peppa",
+    "alias",
+    "app",
+    "init",
+    "application",
+    "initialization",
+    "stdin"
   ],
   "author": {
     "name": "xiewulong",
@@ -21,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/xiewulong/peppa/issues"
   },
-  "homepage": "https://github.com/xiewulong/peppa#readme"
+  "homepage": "https://github.com/xiewulong/peppa#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0"
+  }
 }
