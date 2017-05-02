@@ -24,7 +24,8 @@ commander
 		console.log('    $ peppa init envs');
 		console.log('    $ peppa init envs sample');
 		console.log();
-	});
+	})
+	.usage('[dirname] [cwd]');
 
 commander
 	.command('*')

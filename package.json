@@ -7,8 +7,8 @@
   "scripts": {
     "test": "npm run test:alias && npm run test:stdin && npm run test:init",
     "test:alias": "node ./sample/alias.js",
-    "test:stdin": "node ./sample/stdin.js"
-    "test:init": "node ./bin/peppa.js init envs sample",
+    "test:stdin": "node ./sample/stdin.js",
+    "test:init": "node ./bin/peppa.js init envs sample"
   },
   "repository": {
     "type": "git",

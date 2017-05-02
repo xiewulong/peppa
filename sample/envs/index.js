@@ -8,7 +8,7 @@
 
 module.exports = [
 	{
-		name: 'Product',
+		name: 'Production',
 		path: 'prod',
 	},
 	{

@@ -8,5 +8,4 @@
 
 module.exports = {
 	env: 'development',
-	jsonServer: '@common/db',
 };
