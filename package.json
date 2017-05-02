@@ -1,9 +1,9 @@
 {
   "name": "peppa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Peppa pig",
   "main": "index.js",
-  "bin": "./bin/index.js",
+  "bin": "./bin/peppa.js",
   "scripts": {
     "test": "npm run test:alias && npm run test:stdin && npm run test:init",
     "test:alias": "node ./sample/alias.js",
