@@ -1,6 +1,6 @@
 {
   "name": "peppa",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Peppa pig",
   "main": "index.js",
   "bin": "./bin/index.js",
