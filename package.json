@@ -23,10 +23,7 @@
     "initialization",
     "stdin"
   ],
-  "author": {
-    "name": "xiewulong",
-    "email": "xiewulong@vip.qq.com"
-  },
+  "author": "xiewulong <xiewulong@vip.qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xiewulong/peppa/issues"
