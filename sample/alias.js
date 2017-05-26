@@ -1,5 +1,5 @@
 /*!
- * application initialization
+ * alias
  * xiewulong <xiewulong@vip.qq.com>
  * create: 2017/04/29
  * since: 0.0.1
