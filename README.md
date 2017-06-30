@@ -6,21 +6,25 @@
 
 <details>
 
-* [安装](#安装)
-* [别名管理](#别名管理)
-* [简化stdin输入](#简化stdin输入)
-* [应用初始化](#应用初始化)
+* [安装](#install)
+* [别名管理](#alias)
+* [简化stdin输入](#stdin)
+* [应用初始化](#initialization)
 * [License](#license)
 
 </details>
 
-## 安装
+## Install
+
+安装
 
 ```bash
 $ npm i [-g] peppa
 ```
 
-## 别名管理
+## Alias
+
+别名管理
 
 应用管理中 经常会用到文件路径的抽象管理 为常用的路径提供别名以方便调用
 
@@ -42,7 +46,9 @@ console.log(alias('@app/foo/bar/qux'));  // -> /home/xiewulong/peppa/sample/foo/
 console.log(alias('app/normal/path/will/original/return'));  // -> app/normal/path/will/original/return
 ```
 
-## 简化stdin输入
+## Stdin
+
+简化stdin输入
 
 nodejs的process.stdin用起来挺麻烦的 干脆封装一个让代码组织起来更舒服
 
@@ -74,7 +80,9 @@ Hey, baby! Do you like peppa? [yes/no] y
 Yes, I like her.
 ```
 
-## 应用初始化
+## Initialization
+
+应用初始化
 
 ```bash
 $ peppa init [dirname] [cwd]
