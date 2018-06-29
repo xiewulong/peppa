@@ -7,12 +7,12 @@
 'use strict';
 
 module.exports = [
-	{
-		name: 'Production',
-		path: 'prod',
-	},
-	{
-		name: 'Development',
-		path: 'dev',
-	},
+  {
+    name: 'Production',
+    path: 'prod',
+  },
+  {
+    name: 'Development',
+    path: 'dev',
+  },
 ];

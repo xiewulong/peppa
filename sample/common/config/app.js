@@ -7,8 +7,8 @@
 'use strict';
 
 module.exports = Object.assign(
-	{
-		static: 'dist',
-	}
-	, require('./app.local')
+  {
+    static: 'dist',
+  }
+  , require('./app.local')
 );
